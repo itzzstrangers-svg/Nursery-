@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Smart Nursery Information Portal - plant information, care guides, seasonal tips and local nursery directory.">
+<title>Smart Nursery Information Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="#home">🌱 Smart Nursery</a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#plants">Plants</a>
+      <a href="#care">Plant Care</a>
+      <a href="#seasonal">Seasons</a>
+      <a href="#nurseries">Nurseries</a>
+      <a href="#recommend">Find My Plant</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">Community Engagement Project</span>
+      <h1>Smart Nursery<br><span>Information Portal</span></h1>
+      <p>Discover plants, learn how to care for them, find local nurseries and choose plants according to your needs.</p>
+      <div>
+        <a class="btn" href="#plants">Explore Plants</a>
+        <a class="btn outline" href="#recommend">Find My Plant</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="plant-illustration">🌿</div>
+      <div class="leaf leaf1">🍃</div>
+      <div class="leaf leaf2">🌱</div>
+      <div class="leaf leaf3">🍀</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <span>WHY THIS PORTAL?</span>
+      <h2>Everything about plants in one place</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature"><div class="feature-icon">🌿</div><h3>Plant Information</h3><p>Learn about plant types, sunlight, water, soil, season and benefits.</p></div>
+      <div class="feature"><div class="feature-icon">💧</div><h3>Plant Care</h3><p>Simple care guidance for beginners, students and home gardeners.</p></div>
+      <div class="feature"><div class="feature-icon">🏪</div><h3>Local Nurseries</h3><p>Find useful information about nurseries in your community.</p></div>
+      <div class="feature"><div class="feature-icon">🤖</div><h3>Smart Recommendation</h3><p>Answer a few questions and get suitable plant suggestions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="plants" class="section alt">
+  <div class="container">
+    <div class="section-title">
+      <span>PLANT DIRECTORY</span>
+      <h2>Explore Plants</h2>
+      <p>Search by name or filter by category.</p>
+    </div>
+
+    <div class="search-area">
+      <input id="searchInput" type="search" placeholder="🔍 Search plant...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Medicinal Plant">Medicinal Plants</option>
+        <option value="Flowering Plant">Flowering Plants</option>
+        <option value="Indoor Plant">Indoor Plants</option>
+        <option value="Fruit Plant">Fruit Plants</option>
+        <option value="Vegetable Plant">Vegetable Plants</option>
+      </select>
+    </div>
+
+    <div id="plantGrid" class="plant-grid"></div>
+    <p id="noPlants" class="empty hidden">No plants found. Try another search.</p>
+  </div>
+</section>
+
+<section id="care" class="section">
+  <div class="container">
+    <div class="section-title">
+      <span>PLANT CARE</span>
+      <h2>Simple Care Guide</h2>
+    </div>
+    <div class="care-grid">
+      <article class="care-card"><div>💧</div><h3>Watering</h3><p>Check the soil before watering. Avoid keeping most plants continuously waterlogged. Requirements vary by plant and weather.</p></article>
+      <article class="care-card"><div>☀️</div><h3>Sunlight</h3><p>Some plants need direct sunlight while others prefer indirect light or shade. Always check the plant's requirements.</p></article>
+      <article class="care-card"><div>🌱</div><h3>Soil</h3><p>Use suitable, well-draining soil and containers with drainage holes to reduce excess moisture.</p></article>
+      <article class="care-card"><div>🌿</div><h3>Fertilizer</h3><p>Use fertilizer according to the plant and product instructions. Excess fertilizer can damage plants.</p></article>
+      <article class="care-card"><div>✂️</div><h3>Pruning</h3><p>Remove dead or damaged parts with clean tools. Avoid unnecessary pruning of healthy growth.</p></article>
+      <article class="care-card"><div>🪴</div><h3>Repotting</h3><p>Consider repotting when roots are crowded or the plant has outgrown its container.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="seasonal" class="section alt">
+  <div class="container">
+    <div class="section-title">
+      <span>SEASONAL GUIDE</span>
+      <h2>Plants & Tips by Season</h2>
+    </div>
+    <div class="season-grid">
+      <div class="season summer"><div class="season-icon">☀️</div><h3>Summer</h3><p>Monitor soil moisture and protect sensitive plants from excessive afternoon heat.</p><b>Examples:</b><p>Aloe Vera, Cactus, Hibiscus</p></div>
+      <div class="season monsoon"><div class="season-icon">🌧️</div><h3>Monsoon</h3><p>Focus on drainage, avoid unnecessary watering and watch for fungal problems.</p><b>Examples:</b><p>Tulsi, Ferns, Ixora</p></div>
+      <div class="season winter"><div class="season-icon">❄️</div><h3>Winter</h3><p>Many plants need less frequent watering during cooler periods.</p><b>Examples:</b><p>Marigold, Rose, Spinach</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="nurseries" class="section">
+  <div class="container">
+    <div class="section-title">
+      <span>NURSERY DIRECTORY</span>
+      <h2>Local Nurseries</h2>
+      <p>Replace the demo details below with information collected from real nurseries after getting permission.</p>
+    </div>
+    <div id="nurseryGrid" class="nursery-grid"></div>
+  </div>
+</section>
+
+<section id="recommend" class="section alt">
+  <div class="container">
+    <div class="section-title">
+      <span>SMART FEATURE</span>
+      <h2>Find the Right Plant for You 🌱</h2>
+      <p>Tell us about your growing conditions.</p>
+    </div>
+
+    <div class="recommend-box">
+      <div class="question">
+        <label>1. Where will you grow it?</label>
+        <div class="options" data-group="space">
+          <button type="button" data-value="Indoor">🏠 Indoor</button>
+          <button type="button" data-value="Balcony">🏢 Balcony</button>
+          <button type="button" data-value="Garden">🌳 Garden</button>
+          <button type="button" data-value="Farm">🚜 Farm</button>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>2. How much sunlight is available?</label>
+        <div class="options" data-group="sun">
+          <button type="button" data-value="Low">🌥️ Low</button>
+          <button type="button" data-value="Medium">⛅ Medium</button>
+          <button type="button" data-value="High">☀️ High</button>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>3. How much watering can you provide?</label>
+        <div class="options" data-group="water">
+          <button type="button" data-value="Low">💧 Low</button>
+          <button type="button" data-value="Medium">💧 Medium</button>
+          <button type="button" data-value="High">💧 High</button>
+        </div>
+      </div>
+
+      <button id="recommendBtn" class="btn">🌱 Recommend Plants</button>
+      <div id="recommendResult" class="recommend-result"></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact-grid">
+    <div>
+      <div class="section-title left">
+        <span>GET IN TOUCH</span>
+        <h2>Contact / Inquiry</h2>
+      </div>
+      <p>Have a question about plants or our community project? Send us an inquiry.</p>
+      <div class="contact-info">
+        <p>🌱 <b>Project:</b> Smart Nursery Information Portal</p>
+        <p>📍 <b>Area:</b> Replace with your community/location</p>
+        <p>📧 <b>Email:</b> your-email@example.com</p>
+      </div>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+      <label>Name</label>
+      <input id="contactName" required placeholder="Your name">
+      <label>Email</label>
+      <input id="contactEmail" type="email" required placeholder="Your email">
+      <label>Subject</label>
+      <input id="contactSubject" placeholder="Subject">
+      <label>Message</label>
+      <textarea id="contactMessage" rows="5" required placeholder="Write your message..."></textarea>
+      <button class="btn" type="submit">Send Inquiry</button>
+      <p id="formMessage" class="form-message"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <div><h3>🌱 Smart Nursery</h3><p>Right Plant • Right Care • Right Information</p></div>
+    <div><p>Community Engagement Project</p><p>© <span id="year"></span> Smart Nursery Information Portal</p></div>
+  </div>
+</footer>
+
+<div id="plantModal" class="modal">
+  <div class="modal-content">
+    <button id="closeModal" class="close">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
